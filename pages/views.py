@@ -16,4 +16,17 @@ def home(request):
         "nome_aluno": "Pedro Rangel Machado",
     }
 
-    return render(request, 'pages/base.html', contexto)
+    return render(request, 'pages/home.html', contexto)
+
+
+def contato(request):
+
+    return render(request, 'pages/contato.html')
+
+
+def sobre(request):
+    return render(request, 'pages/sobre.html')
+
+
+def ajuda(request):
+    return render(request, 'pages/ajuda.html')
